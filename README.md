@@ -19,7 +19,7 @@
 
 ## travel-list
 
-A Fiori application.
+This is a Fiori application made as a project from the openSAP course Developing and Extending SAP Fiori Elements Apps - https://open.sap.com/courses/fiori-ea1. 
 
 ### Starting the generated app
 
