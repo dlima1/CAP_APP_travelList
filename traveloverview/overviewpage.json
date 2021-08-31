@@ -1,0 +1,57 @@
+{
+    "globalFilterModel": "mainService",
+    "globalFilterEntityType": "BookingType",
+    "containerLayout": "resizable",
+    "enableLiveFilter": true,
+    "considerAnalyticalParameters": false,
+    "cards": {
+        "card0000": {
+            "model": "mainService",
+            "template": "sap.ovp.cards.charts.analytical",
+            "analyticalCardSettings": {
+                "title": "Spending on Flights",
+                "subTitle": "Spending on Flights",
+                "entitySet": "Booking",
+                "valueSelectionInfo": "Total Spending on FLights",
+                "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#ToBookingAnalysis",
+                "presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#PVFlightData",
+                "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#FlightPriceColumn",
+                "dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#FlightPriceColumnDataPoint"
+            }
+        }
+    },
+    "CARD_001": {
+        "model": "zui_fe_travel_000067_o4",
+        "template": "sap.ovp.cards.v4.table",
+        "tableCardSettings": {
+            "title": "Travel List",
+            "entitySet": "Travel",
+            "sortOrder": "ascending",
+            "sortBy": "BeginDate",
+            "tabs": [
+                {
+                    "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#OpenInProgressTravels",
+                    "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#OpenInProgressSelection",
+                    "dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#REPLACE_WITH_DATAPOINT_ANNOTATION_PATH",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#ToTravelManage",
+                    "value": "Open/InProgress"
+                },
+                {
+                    "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#AcceptedTravels",
+                    "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#AcceptedSelection",
+                    "dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#REPLACE_WITH_DATAPOINT_ANNOTATION_PATH",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#ToTravelManage",
+                    "value": "Accepted"
+                },
+                {
+                    "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#RejectedTravels",
+                    "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#RejectedSelection",
+                    "dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#REPLACE_WITH_DATAPOINT_ANNOTATION_PATH",
+                    "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#ToTravelManage",
+                    "value": "Rejected"
+                }
+            ]
+        }
+    },
+    "schema":"../.schemas/overviewpage.json"
+}

@@ -13,7 +13,7 @@
             <Annotations Target="cds_zfe_booking_analytics_000067.BookingType">
                 <Annotation Term="UI.Chart" Qualifier="FlightPriceColumn">
                     <Record>
-                        <PropertyValue Property="Title" String="Daily Flight Cost"/>
+                        <PropertyValue Property="Title" String="{@i18n>dailyFlightCost}"/>
                         <PropertyValue Property="MeasureAttributes">
                             <Collection>
                                 <Record Type="UI.ChartMeasureAttributeType">
@@ -31,13 +31,13 @@
                             </Collection>
                         </PropertyValue>
                         <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Column"/>
-                        <PropertyValue Property="Description" String="REPLACE_WITH_CHART_DESC"/>
+                        <PropertyValue Property="Description" String="{@i18n>replace_with_chart_desc}"/>
                     </Record>
                 </Annotation>
                 <Annotation Term="UI.DataPoint" Qualifier="FlightPriceColumnDataPoint">
                     <Record Type="UI.DataPointType">
                         <PropertyValue Property="Value" Path="FlightPrice"/>
-                        <PropertyValue Property="Title" String="Flight Price"/>
+                        <PropertyValue Property="Title" String="{@i18n>flightPrice}"/>
                     </Record>
                 </Annotation>
                 <Annotation Term="UI.Identification" Qualifier="ToBookingAnalysis">
